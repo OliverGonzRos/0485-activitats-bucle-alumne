@@ -8,5 +8,25 @@ public class PositiuNegatiuZeroBucle {
         //   "Entra el número <i>: " (amb print, sense salt de línia)
         //   i a la línia següent: "és positiu" / "és negatiu" / "és un zero"
         Scanner teclat = new Scanner(System.in);
+
+        int i = 0;
+        while (i<8) {  
+            
+        System.out.print("Introdueix un numero enter: ");
+        int num = teclat.nextInt();
+
+         if (num > 0) {
+            System.out.println("Es positiu");
+         }
+         if (num < 0) {
+            System.out.println("Es negatiu");
+         }
+         if (num == 0) {
+            System.out.println("Es zero");
+         }
+         i++;
+        }
+
+
     }
 }
