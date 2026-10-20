@@ -24,6 +24,7 @@ public class GranIPetit {
             System.out.println("  Petit = " + num2);
             num1 = num1 /2;
             num2 = num2 *2; }
+            else { i++; }
             }
         
     }

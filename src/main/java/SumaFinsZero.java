@@ -9,5 +9,18 @@ public class SumaFinsZero {
         //   i, per cada número (que no sigui 0), mostra "La suma fins ara és <suma>"
         //   Quan s'entri el 0, mostra "La suma total dels números introduïts és: <suma>"
         Scanner teclat = new Scanner(System.in);
+        double numero = 1;
+        double suma = 0;
+        while (numero>0 || numero<0) {
+        System.out.println("Introdueix un número:");
+        numero = teclat.nextDouble();
+        suma = suma + numero;
+        if (numero==0) {
+            System.out.println("La suma total dels números introduïts és: " +suma);
+        }
+        else {  System.out.println("La suma fins ara és: " +suma);}
+
+        }
+
     }
 }
