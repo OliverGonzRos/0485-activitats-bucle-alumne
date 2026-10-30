@@ -19,7 +19,7 @@ public class NombreDeXifres {
             comptador++;
 
             if (numero==0) {
-                System.out.println("El número " +numeroFinal+ " té " +comptador+ " xifres");
+                System.out.println("El número " +numeroFinal+ " té " +comptador+ " xifres.");
             }
         }
     }

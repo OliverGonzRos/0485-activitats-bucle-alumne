@@ -19,7 +19,7 @@ public class TemperaturaBucleN {
         double temperatureF = teclat.nextDouble();
        
         double temperatureC = ((temperatureF - 32) * 5) / 9;
-        System.out.println("La temperatura en graus Celsius es: " + temperatureC);
+        System.out.println("La temperatura en graus Celsius és: " + temperatureC);
         i++;
         }
     }

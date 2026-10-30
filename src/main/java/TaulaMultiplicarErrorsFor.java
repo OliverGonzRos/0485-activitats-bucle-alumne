@@ -16,21 +16,21 @@ public class TaulaMultiplicarErrorsFor {
     int errors = 0;
         for (int i=1; i<11; i++) {
     
-             System.out.print(numero1 + " x " + i + " = " );
+             System.out.print(numero1 + " × " + i + " = " );
             int numero2 = teclat.nextInt();
 
           
            if (numero2 == (numero1 * i)) {
-            System.out.println("Correcte!");
+            System.out.println("correcte!");
         
            }
-           else {System.out.println("Incorrecte.");
+           else {System.out.println("incorrecte!");
             
             errors++;
            }
            
     
     }
-    System.out.println("Has comès " + errors + " errors.");
+    System.out.println("Has comès " + errors + " errors!");
     }
 }

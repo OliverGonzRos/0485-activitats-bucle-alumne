@@ -11,9 +11,12 @@ public class SequenciaDe3en3 {
         System.out.println("Quin ha de ser el final de la seqüència (un enter): ");
         int numeroFinal = teclat.nextInt();
         int i = 2;
-        while (i<numeroFinal) {
-            System.out.print(i + ", ");
-            i=i+3;
+        while (i<=numeroFinal) {
+             if (i > 2) {
+                System.out.print(", ");
+            }
+            System.out.print(i);
+            i = i + 3;
         }
     }
 }

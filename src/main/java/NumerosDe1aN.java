@@ -11,7 +11,7 @@ public class NumerosDe1aN {
         System.out.println("Escriu un numero enter: ");
         int numero = teclat.nextInt();
         int i = 1;
-        while (i<=numero) {
+        while (i<= numero) {
             System.out.println(i);
             i++;
         }

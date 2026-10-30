@@ -8,7 +8,7 @@ public class TaulaDel6 {
         while (i<=10) {
             int numero = 6 * i;
 
-            System.out.println("6 x " + i + " = " + numero);
+            System.out.println("6 × " + i + " = " + numero);
             i++;
         }
     }

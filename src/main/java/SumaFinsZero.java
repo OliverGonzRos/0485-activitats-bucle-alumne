@@ -18,7 +18,7 @@ public class SumaFinsZero {
         if (numero==0) {
             System.out.println("La suma total dels números introduïts és: " +suma);
         }
-        else {  System.out.println("La suma fins ara és: " +suma);}
+        else {  System.out.println("La suma fins ara és " +suma);}
 
         }
 

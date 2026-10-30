@@ -9,23 +9,19 @@ public class GeneraFinsAl12 {
         //   (la distància és el valor absolut de numero - 12)
         //   Quan surti el 12, no el mostris: acaba mostrant
         //   "Objectiu assolit en: <iteracions> iteracions"
-         Random generador = new Random();
-         int i = 0;
-         int iteracions = 0;
-         int numeros = 0;
-      
-         while (numeros<12 || numeros>12) {
-               numeros = generador.nextInt(1,16);
-               iteracions++;
-               if (numeros<12 || numeros>12) {
-                int distancia = 12 - numeros;
-                System.out.println( "El número generat és: " + numeros + " falten " + distancia + " per assolir l'objectiu.");
-               }
-                else if (numeros == 12) {
-                    System.out.println("Objectiu assolit en: " + iteracions + " iteracions");
-                
-                }
-         }
+        Random generador = new Random();
+        int iteracions = 0;
+        int numeros = 0;
 
+        do {
+            numeros = generador.nextInt(0, 16);
+            iteracions++;
+            if (numeros < 12 || numeros > 12) {
+                int distancia = Math.abs(numeros - 12);
+                System.out.println("El número generat és: " + numeros + ", falten " + distancia + " per assolir l'objectiu.");
+            } else if (numeros == 12) {
+                System.out.println("Objectiu assolit en: " + iteracions + " iteracions");
+            }
+        } while (numeros < 12 || numeros > 12);
     }
 }

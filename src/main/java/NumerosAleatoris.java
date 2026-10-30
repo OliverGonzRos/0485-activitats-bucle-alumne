@@ -11,7 +11,7 @@ public class NumerosAleatoris {
          int i = 0;
          while (i<50) {
         int numero = generador.nextInt(1,16);
-        System.out.println("El numero generat és: " + numero);
+        System.out.println("El número generat és: " + numero);
         i++;
          }
     }

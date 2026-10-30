@@ -12,17 +12,17 @@ public class PositiuNegatiuZeroBucle {
         int i = 0;
         while (i<8) {  
             
-        System.out.print("Introdueix un numero enter: ");
+        System.out.print("Entra el número " + (i + 1) + ": ");
         int num = teclat.nextInt();
 
          if (num > 0) {
-            System.out.println("Es positiu");
+            System.out.println("És positiu");
          }
-         if (num < 0) {
-            System.out.println("Es negatiu");
+         else if (num < 0) {
+            System.out.println("És negatiu");
          }
-         if (num == 0) {
-            System.out.println("Es zero");
+         else if (num == 0) {
+            System.out.println("És zero");
          }
          i++;
         }

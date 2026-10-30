@@ -1,5 +1,10 @@
+
+import java.util.Random;
+import java.util.Scanner;
+
 // Activitat 29 — El set i mig
 public class SetIMig {
+
     public static void main(String[] args) {
         // TODO: demana l'aposta per teclat
         //   amb un bucle while, la condició del qual combini "total < 7.5" I
@@ -13,5 +18,52 @@ public class SetIMig {
         //     "Has Perdut!!!!" si el total supera 7.5
         //     "Has Guanyat <2 x aposta> euros." si el total és exactament 7.5
         //     "El jugador es planta!!!" en cas contrari
+        Scanner teclat = new Scanner(System.in);
+        Random aleatori = new Random();
+
+        double valorTotal = 0;
+        boolean volSeguir = true;
+
+        System.out.println("Quant vols apostar?");
+        double aposta = teclat.nextDouble();
+
+        while (valorTotal < 7.5 && volSeguir) {
+            int carta = aleatori.nextInt(1, 11);
+            double valor;
+            String nomCarta;
+
+            if (carta <= 7) {
+                valor = carta;
+                nomCarta = "un " + carta;
+            } else {
+                valor = 0.5;
+                if (carta == 8) {
+                    nomCarta = "un sota";
+                } else if (carta == 9) {
+                    nomCarta = "un cavall";
+                } else {
+                    nomCarta = "un rei";
+                }
+            }
+
+            valorTotal = valorTotal + valor;
+            System.out.println("Has tret " + nomCarta + " (val " + valor + " punts). Portes " + valorTotal + " punts.");
+
+            if (valorTotal < 7.5) {
+                System.out.println("Vols una altra carta? (s/n)");
+                char resposta = teclat.next().charAt(0);
+                if (resposta != 's') {
+                    volSeguir = false;
+                }
+            }
+        }
+
+        if (valorTotal > 7.5) {
+            System.out.println("Has Perdut!!!!");
+        } else if (valorTotal == 7.5) {
+            System.out.println("Has Guanyat " + (2 * aposta) + " euros.");
+        } else {
+            System.out.println("El jugador es planta!!!");
+        }
     }
 }

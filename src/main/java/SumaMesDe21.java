@@ -10,18 +10,19 @@ public class SumaMesDe21 {
         //   si sí que hi està, suma'l a la variable suma
         //   Quan la suma superi 21, mostra:
         //   "Més de 21! La suma dels números entrats és <suma>"
-        Scanner teclat = new Scanner(System.in);
+              Scanner teclat = new Scanner(System.in);
         double suma = 0;
-        while (suma<=21) {
+        while (suma <= 21) {
             System.out.print("Entra un número entre 1 y 5: ");
             double numero = teclat.nextInt();
-            suma = suma + numero;
-            if (numero<1 || numero>5) {
+            if (numero < 1 || numero > 5) {
                 System.out.println("El número no és correcte!");
-              } else if (suma>21) {
-                System.out.println("Més de 21! La suma dels números entrats és " +suma);
-              }
-
+            } else {
+                suma = suma + numero;
+                if (suma > 21) {
+                    System.out.println("Més de 21! La suma dels números entrats és " + suma);
+                }
+            }
         }
     }
 }

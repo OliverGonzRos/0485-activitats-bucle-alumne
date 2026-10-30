@@ -17,13 +17,13 @@ public class HoresMinutsSegons {
     int segons = teclat.nextInt();
 
         int hores = segons / 3600;
-        System.out.println("Hores:"+ hores);
+        System.out.println("Hores: "+ hores);
         segons = segons % 3600;
 
         int minuts = segons / 60;
-        System.out.println("Minuts:"+ minuts);
+        System.out.println("Minuts: "+ minuts);
         segons = segons % 60;
-        System.out.println("Segons:"+ segons);
+        System.out.println("Segons: "+ segons);
         i++;
     }
     }

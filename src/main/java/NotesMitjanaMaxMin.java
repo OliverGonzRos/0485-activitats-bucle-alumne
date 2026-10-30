@@ -13,6 +13,9 @@ public class NotesMitjanaMaxMin {
         Scanner teclat = new Scanner(System.in);
         System.out.println("Quants alumnes hi ha al grup?");
         int alumnes = teclat.nextInt();
+        if (alumnes<=0) {
+            System.out.println("El numero de alumnes no pot ser 0 o menor");
+        } else {
         int i = 1;
         double suma = 0;
         double notaMenor = Integer.MAX_VALUE;
@@ -34,4 +37,5 @@ public class NotesMitjanaMaxMin {
         System.out.println("La nota més gran és: " +notaMajor);
         System.out.println("La nota més petita és: " +notaMenor);
     }
+}
 }

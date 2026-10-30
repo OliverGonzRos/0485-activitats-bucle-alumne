@@ -12,16 +12,15 @@ public class CaraCreuFor {
         //   Mostra: "Cares: X" i "Creus: Y"
         Scanner teclat = new Scanner(System.in);
         Random generador = new Random();
-        
-        int cara = 0;
-        for (int i=0; i<100; i++) {
-            int numero = generador.nextInt(0,2);
-            if (numero == 0) {
-                cara++;
+
+        int creu = 0;
+        for (int i = 0; i < 100; i++) {
+            int numero = generador.nextInt(0, 2);
+            if (numero == 1) {
+                creu++;
             }
-          
         }
-        int creu = 100 - cara;
+        int cara = 100 - creu;
         System.out.println("Cares: " + cara);
         System.out.println("Creus: " + creu);
     }

@@ -12,7 +12,7 @@ public class NumerosDeNa1 {
         System.out.println("Escriu un numero enter: ");
         int numero = teclat.nextInt();
         int i = 0;
-        while (i<=numero) {
+        while (i<numero) {
             System.out.println(numero - i);
             i++;
         }

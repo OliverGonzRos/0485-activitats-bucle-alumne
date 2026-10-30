@@ -10,20 +10,20 @@ public class CaraCreu {
         //   s'incrementi ella mateixa d'un en un (comptador++)
         //   i calcula les cares com 100 - creus
         //   Mostra: "Cares: X" i "Creus: Y"
-        Scanner teclat = new Scanner(System.in);
+            Scanner teclat = new Scanner(System.in);
         Random generador = new Random();
         int i = 0;
-        int cara = 0;
-        while (i<100) {
-            int numero = generador.nextInt(0,2);
-            if (numero == 0) {
-                cara++;
-            }
+        int creu = 0;
+        while (i < 100) {
+            int numero = generador.nextInt(0, 2);
+            if (numero == 1) {
+            creu++;
+            }           
             i++;
         }
-        int creu = 100 - cara;
+        int cara = 100 - creu;
         System.out.println("Cares: " + cara);
         System.out.println("Creus: " + creu);
-
     }
 }
+   

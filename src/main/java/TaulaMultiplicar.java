@@ -16,7 +16,7 @@ public class TaulaMultiplicar {
         while (i<=10) {
             int numero2 = numero1 * i;
 
-            System.out.println(+ numero1 + " x " + i + " = " + numero2);
+            System.out.println(numero1 + " × " + i + " = " + numero2);
             i++;
         }
     

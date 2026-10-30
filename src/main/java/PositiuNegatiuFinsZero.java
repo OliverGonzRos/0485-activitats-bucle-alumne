@@ -16,10 +16,10 @@ public class PositiuNegatiuFinsZero {
         num = teclat.nextInt();
 
          if (num > 0) {
-            System.out.println("Es positiu");
+            System.out.println("És positiu");
          }
         else if (num < 0) {
-            System.out.println("Es negatiu");
+            System.out.println("És negatiu");
          }
          else  {
             System.out.println("Adeu!");

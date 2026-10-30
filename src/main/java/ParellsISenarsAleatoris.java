@@ -29,7 +29,7 @@ public class ParellsISenarsAleatoris {
         
         }
          int senar = numeros - parell;
-         System.out.println("Han sortit " + parell + " numeros parells y " + senar + " numeros senar.");
+         System.out.println("Han sortit " + parell + " números parells i " + senar + " senars.");
 
     }
 }

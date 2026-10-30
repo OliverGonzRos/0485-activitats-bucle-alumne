@@ -26,7 +26,7 @@ public class MesGranIMesPetit {
             }
             i++;
         }
-        System.out.println("El numero més gran és: " +mesGran+ " y el més petit és: " +mesPetit);
+        System.out.println("El número més gran és: " +mesGran+ " i el més petit: " +mesPetit);
 
     }
 }
